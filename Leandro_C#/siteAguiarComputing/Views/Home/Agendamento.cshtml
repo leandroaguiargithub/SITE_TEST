@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Service Scheduling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            margin-top: 10px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #f9f9f9;
+        }
+
+            input:focus, select:focus, textarea:focus {
+                border-color: #333;
+                box-shadow: 0 0 5px rgba(51, 51, 51, 0.8);
+            }
+
+        button {
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            padding: 14px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+            button:hover {
+                background-color: #555;
+                transform: scale(1.05);
+            }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IT Service Scheduling</h1>
+        <form id="bookingForm" method="POST">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+
+            <label for="service">Tipo de Serviço:</label>
+            <select id="service" name="service" aria-label="Selecione o tipo de serviço" required>
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="manutencao">Montagem de PC Gamer</option>
+                <option value="troca_lcd">Troca de LCD de Notebook</option>
+                <option value="troca_bateria">Troca de Bateria de Notebook</option>
+                <!-- Outras opções aqui -->
+            </select>
+
+            <label for="date">Data Preferencial:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Descrição do Problema/Serviço:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Descreva brevemente o problema ou serviço necessário"></textarea>
+
+            <button type="submit">Enviar Solicitação</button>
+        </form>
+        <div class="footer">
+            &copy; 2024 Aguiar Informática. Todos os direitos reservados.
+        </div>
+    </div>
+</body>
+</html>

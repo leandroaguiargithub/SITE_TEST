@@ -1,0 +1,258 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- banner -->
+
+<div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.jpg); background-size: cover; background-position: center; position: relative; padding: 5rem 0;">
+    <!-- Overlay escuro para melhorar a legibilidade do texto -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+
+    <div class="container text-center text-md-left" style="position: relative; z-index: 2; color: #fff;">
+        <!-- Cabeçalho com logo e título -->
+        <header>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-3">
+                    <img src="img/logo.png" alt="Logo Aguiar Informática" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-6 text-md-right text-center">
+                    <a href="#" class="text-white lead" style="font-size: 1.2rem; text-decoration: none; font-weight: bold;">AGUIAR INFORMÁTICA</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Título Principal -->
+        <h1 class="display-3 font-weight-bold my-5" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" style="text-transform: uppercase; font-size: 3.5rem;">
+            Assistência Técnica
+        </h1>
+
+        <!-- Descrição -->
+        <p class="lead my-4" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" style="font-size: 1.25rem; line-height: 1.8;">
+            Assistência técnica especializada em conserto de notebooks e computadores. Há mais de 19 anos transformando vidas<br>
+            com o melhor serviço da área. Atendemos em São José, SC.<br> Realize seu orçamento ainda hoje!
+        </p>
+
+        <!-- Botão de Ação -->
+        <a href="https://wa.me/5548991890567/?text=Tenho interesse em solicitar um orçamento" target="_blank"
+           class="btn btn-success btn-lg" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+           style="border-radius: 30px; font-weight: bold; padding: 15px 40px; font-size: 1.2rem;">
+            <i class="fa fa-phone"></i> Entrar em Contato
+        </a>
+    </div>
+</div>
+
+<!-- Seção Agendamento -->
+<section id="agendamento" class="py-5" style="background-color: #f4f6f9;">
+    <div class="container text-center">
+        <h2 class="mb-4">Agende Seu Serviço</h2>
+        <p class="lead mb-4">
+            Precisa de suporte técnico? Facilite sua vida agendando um horário conosco de forma rápida e prática.
+            Garanta o melhor atendimento para suas necessidades tecnológicas.
+        </p>
+        <button onclick="location.href = '/home/agendamento'" class="btn btn-success">
+            <i class="fa fa-calendar"></i>&nbsp; Agendar agora
+        </button>
+    </div>
+</section>
+
+<!-- Alguns dos Nossos Serviços -->
+<div class="container my-5 py-2">
+    <h2 class="text-center font-weight-bold my-5">Alguns dos nossos serviços</h2>
+    <div class="row">
+        <!-- Serviço 1 -->
+        <div data-aos="fade-up" class="col-md-4 text-center">
+            <img src="img/smart-protect-1.jpg" alt="Montagem de PC Gamer" class="img-fluid">
+            <h4>Monte Seu PC Gamer</h4>
+            <p>Montamos e entregamos o seu PC gamer rapidamente, com montagem e organização de cabos impecável.</p>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div data-aos="fade-up" data-aos-delay="200" class="col-md-4 text-center">
+            <img src="img/smart-protect-2.jpg" alt="Formatação de Notebook" class="img-fluid">
+            <h4>Formatação de Notebook</h4>
+            <p>Inclui backup completo e instalação dos principais programas. Entrega grátis nas regiões atendidas.</p>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div data-aos="fade-up" data-aos-delay="400" class="col-md-4 text-center">
+            <img src="img/smart-protect-3.jpg" alt="Reparo de Conector de Energia" class="img-fluid">
+            <h4>Reparo de Conector de Energia</h4>
+            <p>Reparos de alta qualidade no conector de entrada de energia para notebooks e MacBooks.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Suporte Remoto -->
+<div class="jumbotron jumbotron-fluid feature" id="feature-first">
+    <div class="container my-5">
+        <div class="row justify-content-between text-center text-md-left">
+            <div data-aos="fade-right" class="col-md-6">
+                <h2>SUPORTE REMOTO</h2>
+                <p>Disponibilizamos suporte remoto para resolver problemas de forma prática e eficiente.</p>
+                <a href="#" class="btn font-weight-bold cta-blue">Saber mais</a>
+            </div>
+            <div data-aos="fade-left" class="col-md-6 align-self-center">
+                <img src="img/feature-1.png" alt="Suporte Remoto" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Orçamento Gratuito -->
+<div class="jumbotron jumbotron-fluid feature" id="feature-last">
+    <div class="container">
+        <div class="row justify-content-between text-center text-md-left">
+            <div data-aos="fade-left" class="col-md-6">
+                <h2>ORÇAMENTO GRATUITO</h2>
+                <p>Receba seu orçamento em até 24 horas após avaliação do equipamento.</p>
+                <a href="#" class="btn font-weight-bold cta-green">Saber mais</a>
+            </div>
+            <div data-aos="fade-right" class="col-md-6 align-self-center">
+                <img src="img/feature-2.png" alt="Orçamento Gratuito" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tabela de Preços -->
+<div class="container my-5 py-2" id="price-table">
+    <h2 class="text-center font-weight-bold mb-3">Verifique Nossas Condições</h2>
+    <div class="row">
+        <div class="col-md-4 text-center py-4">
+            <h4>PAGAMENTO PARCELADO</h4>
+            <p>Em até 3x sem juros</p>
+            <ul class="list-unstyled">
+                <li>Pagamento em até 3x</li>
+            </ul>
+            <a href="#" class="btn font-weight-bold cta-ghost">Ganhe grátis</a>
+        </div>
+        <div class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
+            <h4>RAPIDEZ NO ATENDIMENTO</h4>
+            <p>Orçamento em até 24 horas</p>
+            <ul class="list-unstyled">
+                <li>Atendimento rápido</li>
+            </ul>
+            <a href="#" class="btn font-weight-bold cta-green">Ganhe grátis</a>
+        </div>
+        <div class="col-md-4 text-center py-4">
+            <h4>SUPORTE TÉCNICO</h4>
+            <p>Garantia via acesso remoto</p>
+            <ul class="list-unstyled">
+                <li>Suporte 24h via remoto</li>
+            </ul>
+            <a href="#" class="btn font-weight-bold cta-ghost">Ganhe grátis</a>
+        </div>
+    </div>
+</div>
+
+<!-- Empresas que confiam -->
+<h2 class="text-center font-weight-bold my-5">Empresas que confiam na Aguiar Informática</h2>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-2 py-2">
+                <img src="img/client-1.png" class="img-fluid">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2">
+                <img src="img/client-2.png" class="img-fluid">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2">
+                <img src="img/client-3.png" class="img-fluid">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2">
+                <img src="img/client-4.png" class="img-fluid">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2">
+                <img src="img/client-5.png" class="img-fluid">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2">
+                <img src="img/client-6.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Seção de Avaliações do Google -->
+<section id="avaliacoes" class="py-5" style="background-color: #f4f6f9;">
+    <div class="container text-center">
+        <h2 class="mb-4">O Que Nossos Clientes Estão Falando</h2>
+        <p class="lead mb-4">
+            Confira as avaliações de quem já utilizou nossos serviços e compartilhou sua experiência com a AGUIAR INFORMÁTICA.
+        </p>
+
+
+
+
+
+        <!-- Exemplo de Widget de Avaliações (Pode ser substituído por um widget real do Google) -->
+        <div class="row">
+            <!-- Avaliação 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">"Excelente Serviço!"</h5>
+                        <p class="card-text">"Ótimo trabalho, parabéns !! Super recomendo…"</p>
+                        <p class="font-weight-bold">Evellyn Karollay Barbosa Souto</p>
+                        <!-- Estrelas -->
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avaliação 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">"Rápido e Eficiente!"</h5>
+                        <p class="card-text">"Trabalho muito bom, simpático, preço justo parabéns amei."</p>
+                        <p class="font-weight-bold">Ingrid Santos</p>
+                        <!-- Estrelas -->
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avaliação 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">"Recomendo 100%"</h5>
+                        <p class="card-text">"Leandro é profissional incrível! Extremamente competente. Confio meu notebook para atualizações, formatação e para o que for preciso. Sempre atento ao perfil do cliente, orienta (e instala) para uso de programas e aplicativos. Super indico!"</p>
+                        <p class="font-weight-bold">Bárbara Letícia Mayer</p>
+                        <!-- Estrelas -->
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://g.page/r/Cau2yZvsbUixEAE/review" target="_blank" class="btn btn-success mt-4">
+            Veja mais avaliações no Google
+        </a>
+    </div>
+</section>
+
+@section Scripts {
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+}
